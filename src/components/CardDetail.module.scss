@@ -1,0 +1,369 @@
+.cardDetail {
+    position: absolute;
+    width: 858px;
+    height: 100%;
+    background-color: white;
+    z-index: 999;
+    right: 0;
+    top: 0;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 20px rgba(21, 27, 38, 0.08);
+
+    box-sizing: border-box;
+
+    &_header {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #f2f5fa;
+        padding: 12px 20px;
+
+        &_work {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            margin: 0;
+
+            &_info {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                margin: 0;
+                background: #f2f5fa;
+                border-radius: 10px;
+                padding: 7.5px 22px;
+                cursor: pointer;
+
+                &_play {
+                    margin: 0;
+                }
+
+                &_text {
+                    margin: 0;
+                    font-family: "Open Sans";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 15px;
+                    color: #333333;
+                }
+            }
+        }
+
+        &_task {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            &_text {
+                display: flex;
+                background: #97c95d;
+                border-radius: 10px;
+                padding: 7.5px 22px;
+                margin: 0;
+                gap: 13px;
+                align-items: center;
+                cursor: pointer;
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                color: #ffffff;
+            }
+
+            &_copy {
+                cursor: pointer;
+            }
+
+            &_rollUp {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &_desctiption {
+        display: flex;
+        flex-direction: column;
+
+        &_title {
+            padding: 20px;
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 15px;
+            color: #333333;
+            margin: 0;
+        }
+
+        &_info {
+            display: flex;
+            padding: 15px 20px;
+            gap: 40px;
+            align-items: center;
+
+            &_items {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 28px;
+
+                &_item {
+                    display: flex;
+                    margin: 0;
+                    align-items: center;
+                    margin: 0;
+                    justify-content: flex-start;
+                    height: 20px;
+                    gap: 10px;
+
+                    &_user {
+                        margin: 0;
+                        font-family: "Open Sans";
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #96999c;
+                    }
+                    &_date {
+                        margin: 0;
+                        font-family: "Open Sans";
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #96999c;
+                    }
+                    &_project {
+                        margin: 0;
+                        font-family: "Open Sans";
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #96999c;
+                    }
+                    &_desc {
+                        margin: 0;
+                        font-family: "Open Sans";
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #96999c;
+                    }
+
+                    &_name {
+                        margin: 0;
+                        font-family: "Open Sans";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 15px;
+                        color: #333333;
+                    }
+
+                    &_date {
+                        margin: 0;
+                        font-family: "Open Sans";
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #96999c;
+                    }
+                    &_button {
+                        margin: 0;
+                        border: none;
+                        background-color: inherit;
+                        font-family: "Open Sans";
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #96999c;
+                    }
+
+                    &_input {
+                        margin: 0;
+                        font-family: "Open Sans";
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #96999c;
+                        outline: none;
+                        border-radius: 10px;
+                        padding: 10px;
+                        border: 1px solid #96999c;
+                        width: 250px;
+                        height: 60px;
+                    }
+
+                    &_input::placeholder {
+                        position: absolute;
+                        top: 5px;
+                        left: 5px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        &_subtask {
+            margin-top: 75px;
+            margin-bottom: 100px;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            &_title {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                color: #808080;
+            }
+
+            &_info {
+                display: flex;
+                gap: 20px;
+                justify-content: space-between;
+
+                &_item {
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+
+                    &_text {
+                        margin: 0;
+                        font-family: "Open Sans";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 36px;
+                        color: #333333;
+                    }
+
+                    &_input {
+                        border: none;
+                        outline: none;
+                        font-family: "Open Sans";
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 15px;
+                        color: #808080;
+                    }
+                }
+            }
+        }
+        &_comments {
+            border-top: 1px solid #f2f5fa;
+            height: 380px;
+            overflow: auto;
+
+            &_item {
+                display: flex;
+                align-items: flex-start;
+                gap: 20px;
+                margin-top: 20px;
+                padding: 0 20px;
+                border-bottom: 1px solid #f2f5fa;
+
+                &_info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    &_title {
+                        display: flex;
+                        margin: 0;
+                        gap: 10px;
+                        font-family: "Open Sans";
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 14px;
+                        color: #333333;
+
+                        &_time {
+                            font-family: "Open Sans";
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 12px;
+                            line-height: 14px;
+                            color: #b7b9bb;
+                            margin: 0;
+                        }
+                    }
+
+                    &_subtitle {
+                        font-family: "Open Sans";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #333333;
+                    }
+                }
+
+                &_form {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 20px;
+                    border-bottom: 1px solid #f2f5fa;
+                    justify-content: flex-start;
+                    width: 100%;
+
+                    &_avatar {
+                        margin: 0;
+                    }
+
+                    &_desc {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        padding: 0 0 20px 0;
+                        width: 100%;
+                        position: relative;
+
+                        &_input {
+                            background: #ffffff;
+                            border: 1px solid #e5e5e5;
+                            border-radius: 10px;
+                            outline: none;
+                            width: 100%;
+                            padding: 15px;
+                            font-family: "Open Sans";
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 32px;
+                            color: #96999c;
+                        }
+
+                        &_button {
+                            position: absolute;
+                            right: 16px;
+                            background-color: inherit;
+                            border: none;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cardDetail_input {
+    display: flex;
+    align-items: flex-start;
+}

@@ -1,0 +1,88 @@
+.menuTop {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 11px;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+
+    & .menuTop_info {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+
+        &_state {
+            display: flex;
+            gap: 14px;
+            align-items: center;
+
+            &_title {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 25px;
+                margin: 0;
+            }
+
+            &_subtitle {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                margin: 0;
+
+                &_active {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background: #8bc34a;
+                }
+            }
+        }
+
+        &_links {
+            display: flex;
+            gap: 20px;
+
+            &_item {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                color: #b7b9bb;
+                text-decoration: none;
+                transition: .3s;
+            }
+
+            &_item:hover {
+                color: #4F6EA3;
+                text-decoration: underline;
+            }
+
+            &_active {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                color: #4F6EA3;
+                text-decoration: none;
+                transition: .3s;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &_settings {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+}

@@ -1,0 +1,10 @@
+.App{
+    width: 1920px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    background: #F2F5FA;
+    gap: 31px;
+    height: 1080px;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,133 @@
+.menuLeft {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    font-family: "Open Sans";
+    padding: 18px 0 0 15px;
+    gap: 32px;
+
+    & .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_title {
+            font-family: "Noto Serif TC";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 29px;
+            margin: 0;
+        }
+
+        &_burger {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            &_btn {
+                background: #b7b9bb;
+                height: 2px;
+                width: 20px;
+            }
+        }
+    }
+
+    & .list {
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+        margin: 0;
+        padding: 0;
+
+        &_item {
+            list-style: none;
+            display: flex;
+            gap: 11px;
+            margin: 0;
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            text-transform: capitalize;
+            font-feature-settings: "pnum" on, "lnum" on;
+        }
+    }
+
+    & .favorites {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: capitalize;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #b7b9bb;
+    }
+
+    & .favorites_list {
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+        margin: 0;
+        padding: 0;
+
+        &_item {
+            list-style: none;
+            display: flex;
+            gap: 11px;
+            margin: 0;
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            text-transform: capitalize;
+            font-feature-settings: "pnum" on, "lnum" on;
+
+            &_round {
+                background: #8bc34a;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+            }
+        }
+    }
+    & .command {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: capitalize;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #b7b9bb;
+    }
+
+    & .command_list {
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+        margin: 0;
+        padding: 0;
+
+        &_item {
+            list-style: none;
+            display: flex;
+            gap: 11px;
+            margin: 0;
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            text-transform: capitalize;
+            font-feature-settings: "pnum" on, "lnum" on;
+        }
+    }
+}
+
+.active_rounde {
+    background: #03a9f4 !important;
+}

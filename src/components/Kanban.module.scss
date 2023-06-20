@@ -1,0 +1,82 @@
+.kanban {
+    background: #ffffff;
+    border-radius: 10px 0px 0px 0px;
+    width: 1630px;
+    height: 100%;
+    margin-top: 15px;
+    box-sizing: border-box;
+    position: relative;
+    
+
+    &_navbar {
+        display: flex;
+        width: 100%;
+        border-bottom: 1px solid #f2f5fa;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        box-sizing: border-box;
+
+        &_taskInfo {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            color: #808080;
+            margin: 0;
+        }
+
+        &_settings {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+
+            &_item {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 27px;
+                color: #808080;
+                display: flex;
+                gap: 9px;
+                margin: 0;
+            }
+        }
+    }
+
+    &_info {
+        display: flex;
+        padding: 15px 20px 0;
+        gap: 30px;
+        height: 100%;
+        overflow-x: scroll;
+        width: 100%;
+
+        &_columns {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 15px;
+            height: 100%;
+            
+        }
+
+        &_addColumn {
+            margin-top: 15px;
+
+            &_button {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                color: #939191;
+                background-color: inherit;
+                border: none;
+                cursor: pointer;
+            }
+          
+        }
+    }
+}
